@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- icon for dropdown arrow -->
+     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<body>
+    <!-- Placeholder elements for the header -->
+    <div id="header"></div>
+    <main>
+        <!-- hero section -->
+        <div class="hero-section">
+            <div class="hero-text">
+                <img src="./assets/logo.png" alt="logo" class="logo-hero">
+            </div>
+        </div>
+        <div class="main-container">
+            <!-- carousel section -->
+            <div class="carousel-section">
+                <h2>Carousel</h2>
+                <img src="./assets/carousel-arrow-prev.svg" class="arr-prev" id="left" alt="carousel-arrow-prev">
+                <ul class="carousel">
+                    <li class="carousel-img"><img src="./assets/IMG20231216154921.jpg" alt="carousel-1"></li>
+                    <li class="carousel-img"><img src="./assets/IMG20231216155032.jpg" alt="carousel-2"></li>
+                    <li class="carousel-img"><img src="./assets/IMG20231216155150.jpg" alt="carousel-3"></li>
+                    <li class="carousel-img"><img src="./assets/IMG20231216155335.jpg" alt="carousel-4"></li>
+                    <li class="carousel-img"><img src="./assets/IMG20231216155554.jpg" alt="carousel-5"></li>
+                    <li class="carousel-img"><img src="./assets/IMG20231216160450.jpg" alt="carousel-6"></li>
+                </ul>
+                <img src="./assets/carousel-arrow-next.svg" class="arr-next"  id="right" alt="carousel-arrow-next">
+            </div>
+            <!-- card section -->
+            <div class="card-section">
+                <h2>Card</h2>
+                <h3>3 column card on PC</h3>
+                <ul class="col-3-container">
+                    <li class="col-3-card"><img src="./assets/pattern-making.jpeg" alt="3col-img1">
+                        <h4>card title</h4>
+                        <p>Lorem ipsum dolor sit amet, ne quando populo qui.</p>
+                    </li>
+                    <li class="col-3-card"><img src="./assets/cutting-machine.jpg" alt="3col-img1">
+                        <h4>card title</h4>
+                        <p>Lorem ipsum dolor sit amet, ne quando populo qui.</p>
+                    </li>
+                    <li class="col-3-card"><img src="./assets/sewing.jpg" alt="3col-img1">
+                        <h4>card title</h4>
+                        <p>Lorem ipsum dolor sit amet, ne quando populo qui.</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Section -->
+            <div class="section-container">
+            <h2>Section</h2>
+            <div class="section-1-wrapper">
+                <img src="./assets/garments.jpg" alt="section-img1">
+                <div class="section-card1">
+                    <h3>card title</h3>
+                    <p>Lorem ipsum dolor sit amet, ne quando populo qui. Stet detraxit deseruisse nec ne. Eum eu altera deterruisset, quas augue graecis ne per, quo aeterno mentitum scribentur ex. Cum propriae periculis assueverit ea, in iriure accusata ius. Causae blandit argumentum sed at, appellantur liberavisse consectetuer ei cum.</p>
+                </div>
+            </div>
+            <div class="section-2-wrapper">
+                <div class="section-card2">
+                    <h3>card title</h3>
+                    <p>Lorem ipsum dolor sit amet, ne quando populo qui. Stet detraxit deseruisse nec ne. Eum eu altera deterruisset, quas augue graecis ne per, quo aeterno mentitum scribentur ex. Cum propriae periculis assueverit ea, in iriure accusata ius. Causae blandit argumentum sed at, appellantur liberavisse consectetuer ei cum.</p>
+                </div>
+                <img src="./assets/sewer.jpg" alt="section-img2">
+            </div>
+            <!-- Accordion Section -->
+            <div class="accordion-container">
+                <h2>accordion</h2>
+                <ul class="accordion">
+                    <li class="accordion-1-wrapper">
+                        <label for="accordion-1-item">Accordion Title <img src="./assets/accordion-arrow-pc.svg" alt="accordion-arrow-pc"></label>
+                        <input type="checkbox" name="accordion" id="accordion-1-item">
+                        <div class="accordion-content">
+                            <hr>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-2-wrapper">
+                        <label for="accordion-2-item">Accordion Title <img src="./assets/accordion-arrow-pc.svg" alt="accordion-arrow-pc"></label>
+                        <input type="checkbox" name="accordion" id="accordion-2-item">
+                        <div class="accordion-content">
+                            <hr>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-3-wrapper">
+                        <label for="accordion-3-item">Accordion Title <img src="./assets/accordion-arrow-pc.svg" alt="accordion-arrow-pc"></label>
+                        <input type="checkbox" name="accordion" id="accordion-3-item">
+                        <div class="accordion-content">
+                            <hr>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-4-wrapper">
+                        <label for="accordion-4-item">Accordion Title <img src="./assets/accordion-arrow-pc.svg" alt="accordion-arrow-pc"></label>
+                        <input type="checkbox" name="accordion" id="accordion-4-item">
+                        <div class="accordion-content">
+                            <hr>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-5-wrapper">
+                        <label for="accordion-5-item">Accordion Title <img src="./assets/accordion-arrow-pc.svg" alt="accordion-arrow-pc"></label>
+                        <input type="checkbox" name="accordion" id="accordion-5-item">
+                        <div class="accordion-content">
+                            <hr>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+         <!-- Placeholder elements for the form section -->
+        <div class="form-container">
+            <h2>Form</h2>
+            <form action="" method="post">
+                <div class="form-group">
+                    <p class="category-label">Name</p>
+                    <div class="input-container"><input type="text" name="name" required></div>
+                </div>
+
+                <div class="form-group">
+                    <p class="category-label">Company</p>
+                    <div class="input-container"><input type="text" name="company" required></div>
+                </div>
+
+                <div class="form-group">
+                    <p class="category-label">E-mail</p>
+                    <div class="input-container"><input type="email" name="email" required></div>
+                </div>
+
+                <div class="form-group">
+                    <p class="category-label">Select Field</p>
+                    <div class="input-container">
+                        <div class="select-menu">
+                            <div class="select-btn">
+                                <div class="sBtn-text"> </div>
+                                <i class="bx bx-chevron-down"></i>
+                            </div>
+                            <ul class="options">
+                                <li class="option">Option 1</li>
+                                <li class="option">Option 2</li>
+                                <li class="option">Option 3</li>
+                                <li class="option">Option 4</li>
+                                <li class="option">Option 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <p class="category-label">Radio Field</p>
+                    <div class="selection-container radio-container">
+                        <label class="radio">
+                            <input type="radio" name="radioField" id="radio-1" required>
+                            <span></span>
+                            Selection 1
+                        </label>
+                    
+                        <label class="radio">
+                            <input type="radio" name="radioField" id="radio-2" required>
+                            <span></span>
+                            Selection 2
+                        </label>
+                    
+                        <label class="radio">
+                            <input type="radio" name="radioField" id="radio-3" required>
+                            <span></span>
+                            Selection 3
+                        </label>
+                    
+                        <label class="radio">
+                            <input type="radio" name="radioField" id="radio-4" required>
+                            <span></span>
+                            Selection 4
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <p class="category-label">Checkbox Field</p>
+                    <div class="selection-container">
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkboxField" id="checkbox-1" required>
+                            <span></span>
+                            Selection 1
+                        </label>
+                
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkboxField" id="checkbox-2" required>
+                            <span></span>
+                            Selection 2
+                        </label>
+                
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkboxField" id="checkbox-3" required>
+                            <span></span>
+                            Selection 3
+                        </label>
+                
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkboxField" id="checkbox-4" required>
+                            <span></span>
+                            Selection 4
+                        </label>
+                    </div>
+                </div>    
+                <!-- Submit Button -->
+                <div class="form-group button-container">
+                    <div class="input-container">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- Placeholder elements for the footer -->
+    <div id="footer"></div>
+</body>
+<script src="index.js"></script>
+</html>

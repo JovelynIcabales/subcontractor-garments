@@ -1,0 +1,147 @@
+<header>
+    <!--header CSS style-->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #333;
+}
+nav {
+    background-color: rgb(66, 125, 157);
+    height: 64px;
+    justify-content: center;
+}
+.logo{
+    width: 130px;
+}
+.nav-container {
+    padding: 5px 10px;
+}
+.nav-container ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Remove default margin from ul */
+}
+.nav-container li {
+    margin: 0;
+}
+.nav-container a {
+    height: 100%;
+    padding: 0 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-container li:first-child a {
+    margin-right: 70px;
+}
+.nav-container li:last-child {
+    margin-left: auto;
+}
+.nav-container li:last-child a {
+    color: white;
+    padding: 12px 46px;
+    border-radius: 5px;
+    background-color: #164863;
+}
+.menu-button {
+    display: none;
+}
+@media (min-width: 800px) {
+    .sidebar-container {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .nav-container li:first-child a {
+        margin: 0;
+        padding: 0;
+    }
+    .menu-button {
+        display: flex;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+    .hideMobile {
+        display: none;
+    }
+    .sidebar-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #9BBEC8;
+        width: 100vw;
+        height: 300px;
+        z-index: 9999;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .sidebar-container ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        list-style: none;
+        margin: 0; /* Remove default margin from ul */
+    }
+    .sidebar-container a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .sidebar-container li:first-child {
+        margin-right: auto;
+        padding: 5px 12px;
+    }
+    .sidebar-container li:last-child a {
+        background-color: rgb(66, 125, 157);
+        padding: 12px 127px;
+        border-radius: 5px;
+        color: white;
+    }
+    .sidebar-container li:nth-child(2) {
+        position: absolute;
+        right: 0;
+        padding-right: 25px;
+        padding-top: 15px;
+    }
+    .sidebar-container li:nth-child(2):hover {
+        cursor: pointer;
+    }
+}
+@media (max-width: 300px) {
+    .sidebar-container {
+        width: 100%;
+        padding: 0 2px;
+    }
+}
+
+    </style>
+    <!--header-->
+       <nav>
+        <div class="nav-container">
+            <ul>
+                <li id="logo"><a href=""><img src="../assets/logo.png" alt="logo" class="logo"></a></li>
+                <li class="hideMobile"><a href="#about">about</a></li>
+                <li class="hideMobile"><a href="#service">service</a></li>
+                <li class="hideMobile"><a href="#contact">contact</a></li>
+            </ul>
+            <div class="menu-button" onclick="showSidebar()"><img src="../assets/menu-icon.svg" alt="menu-icon"></div>
+        </div>
+        <div class="sidebar-container">
+            <ul>
+                <li class="hideWeb"><a href=""><img src="../assets/logo.png" alt="logo" class="logo"></a></li>
+                <li class="hideWeb" onclick="hideSidebar()"><img src="../assets/close-icon.svg" alt="close-icon"></li>
+                <li class="hideWeb"><a href="#about">about</a></li>
+                <li class="hideWeb"><a href="#service">service</a></li>
+                <li class="hideWeb"><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
